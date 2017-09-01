@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yandex Школа Node.JS</title>
+	<link href="./index.css" rel="stylesheet" type="text/css" />
+	<script src="./index.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+
+<h2>Задание для Школы Яндекс Node.js</h2>
+	<form id="myForm" method="get" action="./success.json" onsubmit="return submitForm()">
+		<ul>
+		<li><label>ФИО:<br/><input type="text" id="fio" name="fio" placeholder="Фамилия Имя Отчество" required></label></li>
+		<li><label>Email:<br/><input type="email" id="email" name="email" placeholder="someone@yandex.ru" required></label></li>
+		<li><label>Телефон:<br/><input type="tel" id="phone" name="phone" placeholder="+7(999)999-99-99" required></label></li>
+		<li><input type="submit" id="submitButton" value="Отправить"></li></ul>
+	</form>
+	<div id="resultContainer"></div>
+</body>
+</html>
